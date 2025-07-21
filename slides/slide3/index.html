@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Slide 3 - Self-Assessment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+</head>
+<body>
+  <audio id="audio">
+    <source src="resources/test-audio.mp3" type="audio/mp3" />
+    Tu navegador no soporta audio.
+  </audio>
+
+  <div id="dialog" title="Resultado">Resultado</div>
+
+  <h2 class="etiqueta">How are you smart?</h2>
+
+  <div class="cajacita">
+    <div class="audio-container">
+      <div class="plei">▶</div>
+      <div class="paus">⏸</div>
+      <div class="estop">⏹</div>
+    </div>
+    <p class="citaudio">
+      Howard Gardner said: "It’s not how smart you are that matters, what really counts is how you are smart."
+    </p>
+  </div>
+
+  <p id="despliega_dinamica" class="introdinamica_3">Dinámica: Brainstorming</p>
+  <div id="dinamica" class="oculto">
+    <img src="media/slide3-image.png" alt="Dinamica" />
+    <p>¿Cómo afecta nuestro tipo de inteligencia en nuestra práctica docente?</p>
+  </div>
+
+  <p id="despliega_test" class="introtest">Self-Assessment General</p>
+  <div id="self_assessment" class="oculto">
+    <table class="tabla">
+      <tr><th>Criteria</th><th>Usually</th><th>Sometimes</th><th>Seldom</th></tr>
+      <!-- Generamos dinámicamente las filas en script.js -->
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
