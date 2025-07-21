@@ -27,14 +27,14 @@ conversion_slides/
 │
 ├── README.md                          # Documentación del proyecto
 │
-├── slide1/                            # Slide 1: "Ejercicio interactivo de reordenación" cuidados auxiliares de enfermeria en procesos nefrourologicos - u16
+├── slide1/                            # Slide 1: "Ejercicio interactivo de reordenación" cuidados auxiliares de enfermeria en procesos nefrourologicos - u16. slide 16
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
 │   └── /media/
 │       └── multiple_intelligences.png
 │
-├── slide2/                            # Slide 2: Animación visual con transformación. Curso Inteligencias Múltiples(imagen de prueba)
+├── slide2/                            # Slide 2: Animación visual con transformación. Curso Inteligencias Múltiples(imagen de prueba). Slide 2
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
@@ -60,6 +60,58 @@ conversion_slides/
 ├── .gitignore
 ├── package.json
 └── package-lock.json
+
+EJEMPLO SLIDE 1
+
+Descripción:
+Actividad interactiva en la que el usuario debe ordenar 6 frases relacionadas con el contenido de la unidad. Una vez ordenadas, puede hacer clic en el botón “Comprobar” para validar si el orden es correcto. También se incluye un botón para reiniciar la actividad y volver a intentarlo.
+
+Funcionalidad:
+
+Arrastrar y soltar elementos para cambiar el orden.
+
+Comprobación automática del orden correcto.
+
+Mensaje de resultado (éxito o error).
+
+Reinicio de la actividad.
+
+EJEMPLO SLIDE 2
+
+📝 Descripción:
+Actividad visual en la que se presenta una imagen ilustrativa (imagen de prueba) sobre el concepto de las inteligencias múltiples.
+Al cargar la actividad, la imagen realiza una animación de rotación y escala para captar la atención del usuario.
+
+⚙️ Funcionalidad:
+Animación de rotación de la imagen (720°).
+
+Animación de zoom desde escala 0 hasta escala 1.
+
+Ejecución automática de la animación al iniciar el slide.
+
+Propósito visual y motivacional como introducción al tema.
+
+EJEMPLO SLIDE 3
+
+📝 Descripción:
+Actividad interactiva en la que el usuario escucha una cita de Howard Gardner (audio no original) y reflexiona sobre el concepto de inteligencias múltiples.
+Incluye una sección de brainstorming con dinámica colaborativa, seguida de una autoevaluación con 13 criterios.
+La actividad se considera completada una vez que el usuario ha respondido a todos los criterios.
+
+⚙️ Funcionalidad:
+Reproductor de audio con botones play, pause y stop.
+
+Botones para desplegar secciones:
+
+Dinámica grupal con roles y objetivos.
+
+Autoevaluación personal tipo test (13 ítems).
+
+Registro de selección para cada ítem del test.
+
+Validación de actividad completa (todos los ítems marcados).
+
+Mensaje de éxito animado con confirmación.
 
 
 ## 🚀 Cómo usar
