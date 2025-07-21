@@ -75,3 +75,15 @@ body {
 #dialog.visible {
   display: block;
 }
+
+#dinamica {
+  max-width: 600px; /* Ajusta este valor según lo pequeño que quieras el bloque */
+  margin: 20px auto;
+  text-align: center;
+}
+
+#dinamica img {
+  width: 100%;       /* Escala la imagen al ancho del contenedor */
+  max-width: 400px;  /* Limita el tamaño máximo de la imagen */
+  height: auto;
+}
