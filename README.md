@@ -118,7 +118,7 @@ Mensaje de éxito animado con confirmación.
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/MiriamVertice/conversion_slide.git
 Abre index.html en tu navegador para probar el slide interactivo.
 
 ✅ Puedes usar Live Server en VS Code para ver los cambios automáticamente.
