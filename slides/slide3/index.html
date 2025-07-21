@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Slide 3 - Self-Assessment</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
 </head>
 <body>
   <audio id="audio">
@@ -12,15 +11,19 @@
     Tu navegador no soporta audio.
   </audio>
 
-  <div id="dialog" title="Resultado">Resultado</div>
+  <div id="dialog" class="hidden">
+    <p>Enhorabuena, has completado esta actividad.</p>
+    <p>Ahora puedes continuar con el siguiente apartado.</p>
+    <p>Guardando seguimiento, por favor espere...</p>
+  </div>
 
   <h2 class="etiqueta">How are you smart?</h2>
 
   <div class="cajacita">
     <div class="audio-container">
-      <div class="plei">▶</div>
-      <div class="paus">⏸</div>
-      <div class="estop">⏹</div>
+      <button class="plei">▶</button>
+      <button class="paus">⏸</button>
+      <button class="estop">⏹</button>
     </div>
     <p class="citaudio">
       Howard Gardner said: "It’s not how smart you are that matters, what really counts is how you are smart."
@@ -29,7 +32,7 @@
 
   <p id="despliega_dinamica" class="introdinamica_3">Dinámica: Brainstorming</p>
   <div id="dinamica" class="oculto">
-    <img src="media/slide3-image.png" alt="Dinamica" />
+    <img src="media/lapiz_amco.png" alt="Dinamica" />
     <p>¿Cómo afecta nuestro tipo de inteligencia en nuestra práctica docente?</p>
   </div>
 
@@ -37,12 +40,10 @@
   <div id="self_assessment" class="oculto">
     <table class="tabla">
       <tr><th>Criteria</th><th>Usually</th><th>Sometimes</th><th>Seldom</th></tr>
-      <!-- Generamos dinámicamente las filas en script.js -->
+      <!-- Las filas se generan desde script.js -->
     </table>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>
