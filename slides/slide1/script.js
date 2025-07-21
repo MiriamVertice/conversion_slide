@@ -1,12 +1,8 @@
-let selected = null;
-
-const inst = document.getElementById("inst");
-const capas = document.querySelectorAll(".capa");
+const contenedor = document.getElementById("contenedor");
 const dialog = document.getElementById("dialog");
-const container = document.getElementById("contenedor");
+const inst = document.getElementById("inst");
 
-// Guardamos el orden correcto original
-const ordenCorrecto = [
+let ordenCorrecto = [
   "div_1",
   "div_2",
   "div_3",
@@ -15,7 +11,10 @@ const ordenCorrecto = [
   "div_6"
 ];
 
-capas.forEach((div) => {
+let selected = null;
+
+// Añadir eventos a cada frase
+document.querySelectorAll(".capa").forEach(div => {
   div.addEventListener("click", () => {
     if (!selected) {
       selected = div;
@@ -29,19 +28,16 @@ capas.forEach((div) => {
   });
 });
 
-function intercambiar(div1, div2) {
-  const clone1 = div1.cloneNode(true);
-  const clone2 = div2.cloneNode(true);
+function intercambiar(el1, el2) {
+  const tmp = el1.cloneNode(true);
+  const tmp2 = el2.cloneNode(true);
 
-  div1.replaceWith(clone2);
-  div2.replaceWith(clone1);
+  el1.replaceWith(tmp2);
+  el2.replaceWith(tmp);
 
-  asignarEventos();
-}
-
-function asignarEventos() {
-  document.querySelectorAll(".capa").forEach((div) => {
-    div.onclick = () => {
+  // Reasignar eventos
+  document.querySelectorAll(".capa").forEach(div => {
+    div.addEventListener("click", () => {
       if (!selected) {
         selected = div;
         div.classList.add("selected");
@@ -51,12 +47,12 @@ function asignarEventos() {
         limpiarSeleccion();
         inst.textContent = "Pulse sobre una opción para seleccionarla.";
       }
-    };
+    });
   });
 }
 
 function limpiarSeleccion() {
-  document.querySelectorAll(".capa").forEach((el) => el.classList.remove("selected"));
+  document.querySelectorAll(".capa").forEach(el => el.classList.remove("selected"));
   selected = null;
 }
 
@@ -65,9 +61,9 @@ document.getElementById("reint").addEventListener("click", () => {
 });
 
 document.getElementById("comprobar").addEventListener("click", () => {
-  const actuales = Array.from(container.children).map((el) => el.id);
-  let correctas = actuales.filter((id, index) => id === ordenCorrecto[index]).length;
+  const actuales = Array.from(contenedor.children).map(el => el.id);
+  let correctas = actuales.filter((id, i) => id === ordenCorrecto[i]).length;
 
-  dialog.textContent = `Correctas: ${correctas}/6`;
+  dialog.textContent = `Correctas: ${correctas}/${ordenCorrecto.length}`;
   dialog.style.display = "block";
 });

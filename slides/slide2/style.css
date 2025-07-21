@@ -1,0 +1,21 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+#contenido_intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#multiple {
+  width: 639px;
+  height: 554px;
+  background-image: url('./media/Example.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(0) rotate(0deg);
+  transition: transform 2s ease-out;
+}
