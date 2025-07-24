@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#contenido {
+  max-width: 900px;
+  margin: auto;
+}
+
+#recursosTitulo div {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#recursosTexto p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.indiceContenidos ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.indiceContenidos ol li {
+  margin-bottom: 10px;
+}
+
+.indiceContenidos a {
+  text-decoration: none;
+  color: #005f99;
+}
+
+.indiceContenidos a:hover {
+  text-decoration: underline;
+}

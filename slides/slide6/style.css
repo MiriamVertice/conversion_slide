@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#fotitochica {
+  cursor: pointer;
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+#fondodifuminado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.9;
+  display: none;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+}
+
+#fotitogrande {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#fotitogrande img:first-child {
+  width: 500px;
+  margin-top: 30px;
+}
+
+#cerrado {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 12;
+  width: 25px;
+  cursor: pointer;
+}

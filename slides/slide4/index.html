@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slide 4 - Apuesta correcta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="contenido">
+    <div id="enunciado">Apuesta a la opción correcta</div>
+
+    <div id="pregunta">Texto de la pregunta</div>
+
+    <div id="monitores"></div>
+    <div id="dinero"></div>
+
+    <div id="botones">
+      <button id="comprobar" disabled>Comprobar</button>
+      <button id="sig" disabled>Siguiente</button>
+      <button id="reint" disabled>Reintentar</button>
+    </div>
+
+    <div id="preguntas" style="display: none;">
+      <div>
+        <p data-ref="pregunta">¿Cuál es la capa más superficial de la piel?</p>
+        <p data-ref="incorrecta">Estrato lúcido</p>
+        <p data-ref="incorrecta">Estrato granuloso</p>
+        <p data-ref="correcta">Capa córnea</p>
+        <p data-ref="incorrecta">Estrato basal</p>
+      </div>
+      <div>
+        <p data-ref="pregunta">¿En qué estrato se reproducen las células?</p>
+        <p data-ref="incorrecta">Capa córnea</p>
+        <p data-ref="incorrecta">Estrato lúcido</p>
+        <p data-ref="correcta">Estrato basal</p>
+        <p data-ref="incorrecta">Estrato de células espinosas</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
