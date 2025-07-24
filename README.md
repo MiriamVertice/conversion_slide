@@ -207,12 +207,14 @@ Redimensionando la ventana (se fuerza el cierre automático).
 ## 🚀 Cómo usar
 
 1. Clona este repositorio:
-```bash
+
 git clone https://github.com/MiriamVertice/conversion_slide.git
 Abre index.html en tu navegador para probar el slide interactivo.
 
-✅ Puedes usar Live Server en VS Code para ver los cambios automáticamente.
+✅ Puedes usar Live Server en VS Code para ver los cambios automáticamente, o npm run start.
+
 ⚙️ Tecnologías utilizadas
+
 HTML5
 
 CSS3
